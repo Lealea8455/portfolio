@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -16,11 +16,11 @@ library.add(fab)
 function App() {
   return (
     <Router>
-      <Navbar/>
-      <div className='top-section'>
-        <Switch>
-            <Route component={Routes} />
-        </Switch>
+      <div  id='wrapper'>
+        <Navbar/>
+          <Switch>
+              <Route component={Routes} />
+          </Switch>
       </div>
     </Router>
   );

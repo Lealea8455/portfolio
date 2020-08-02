@@ -46,8 +46,11 @@ function Contact() {
           <input type="text" name="message" placeholder="message" onChange={e => onChange(e)} />
           <button type="submit">Submit</button>
       </form>
+      {/* <Map /> */}
     </Fragment>
   )
 }
 
 export default Contact;
+
+// AIzaSyDpcOz7Gt7aqwGpx76ViZiPdtboN65FILw
