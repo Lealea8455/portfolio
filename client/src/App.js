@@ -9,8 +9,8 @@ import {
 import Navbar from './components/layout/Navbar';
 import Routes from './components/routing/Routes';
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 library.add(fab)
 
 function App() {
