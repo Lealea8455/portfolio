@@ -37,7 +37,11 @@ function Contact() {
     <Fragment>
       <h1>Contact me</h1>
       <p>I am currently looking for a position as a full stack developer.<br/>
-         Would be happy to get to know you, and share my knowledge and experience with you.  </p>
+         Would be happy to get to know you, and share my knowledge and experience with you.  </p>   
+      <div className="phone-details">
+        <p>Call me <span>050-430-7456</span></p>
+      </div>
+      <p>Or contact me via email</p>
       <form onSubmit={e => onSubmit(e)} > 
           <input type="text" name="name" placeholder="name" onChange={e => onChange(e)} />
           <input type="text" name="company" placeholder="company" onChange={e => onChange(e)} />
