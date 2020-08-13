@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import './App.scss';
 import {
   BrowserRouter as Router,
@@ -18,10 +18,12 @@ function App() {
     <Router>
       <div  id='wrapper'>
         <div className='inner'>
-        <Navbar/>
-          <Switch>
-              <Route component={Routes} />
-          </Switch>
+        {/* <div className='background'> */}
+          <Navbar />
+            <Switch>
+                <Route component={Routes} />
+            </Switch>
+        {/* </div> */}
         </div>
         {/* <Footer /> */} <div className='footer'>Footer</div>
       </div>

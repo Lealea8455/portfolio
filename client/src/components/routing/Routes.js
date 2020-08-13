@@ -4,17 +4,17 @@ import {
   Route,
 } from "react-router-dom";
 
-import Landing from '../layout/Landing';
 import About from '../About';
 import Projects from '../Projects';
 import Contact from '../Contact';
 import Skills from '../Skills';
+import Home from '../layout/Home';
 
 function Routes() {
   return (
     <section>
       <Switch>
-        <Route exact path='/' component={Landing}/>
+        <Route exact path='/' component={Home}/>
         <Route path='/about' component={About}/>  
         <Route path='/skills' component={Skills}/> 
         <Route path='/projects' component={Projects}/> 
