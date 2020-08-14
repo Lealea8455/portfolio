@@ -22,7 +22,11 @@ body {
 
     .inner {
          height: 100%;
-
+         max-width: 1300px;
+         text-align:left;   
+         margin: auto;    
+         padding: 0 30px;
+ 
         header {    
             position: absolute;
                 display: flex;
@@ -54,11 +58,6 @@ body {
                     left: 0;
                 }
             }
-    }
-    .inner, .footer { 
-        max-width: 1300px;
-        text-align:left;   
-        margin: auto;
     }
 }
 
@@ -210,7 +209,7 @@ body {
     }
 
     .menu-circles {
-        > div {
+        > a {
             display: inline-flex;
             flex-direction: column;
             justify-content: center;
@@ -221,18 +220,51 @@ body {
             background-color: #ffffff;
             border-radius: 50%;
             margin: auto 40px;
-
-            a {
-                text-decoration: none;
-                font-size: 20px;
-                font-weight: bold;   
-                margin-top: 30px;      
-                color: #000000;
-            }
-
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;   
+            margin-top: 30px;      
+            color: #000000;
+        
             a:visited {
                 color: #000000;
             }
         }
+    }
+}
+
+.footer {
+    display: flex;
+    max-width: 1300px;
+    text-align:left;   
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 180px;
+
+    .footer-data {
+        display: flex;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 900;      
+        color: #2fd0d8;
+        margin-right: 30px;
+        line-height: 35px;
+    }
+
+    .social-icons img {
+        margin-right: 20px;
+    }
+
+    .footer-menu {
+        a {
+            font-size: 16px;
+            color: #afafaf;
+            text-decoration: none;
+            margin: auto 12.5px;
+        }
+            
+
     }
 }

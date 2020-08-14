@@ -20,11 +20,11 @@ function App() {
       <div  id='wrapper'>
         <div className='inner'>
           <Navbar />
-            <Switch>
-                <Route component={Routes} />
-            </Switch>
+          <Switch>
+              <Route component={Routes} />
+          </Switch>
+          <Footer /> 
         </div>
-        <Footer /> 
       </div>
     </Router>
   );

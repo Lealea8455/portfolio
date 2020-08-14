@@ -1,9 +1,6 @@
 import React, { Fragment } from 'react';
 import {Link} from 'react-router-dom';
 import myImage from '../../images/me.png';
-import facebookIcon from '../../images/facebook-icon.svg';
-import githubIcon from '../../images/github-icon.svg';
-import linkedInIcon from '../../images/linkedIn-icon.svg';
 import boneIcon from '../../images/bone.svg';
 import calendarIcon from '../../images/calendar.svg';
 import coffeeIcon from '../../images/coffee.svg';
@@ -12,8 +9,7 @@ import desktop from '../../images/desktop.png';
 import tags from '../../images/tags.svg';
 import mail from '../../images/mail.svg';
 import fingerprint from '../../images/fingerprint.svg';
-
-
+import SocialIcons from '../SocialIcons';
 
 function Home() {
   return (
@@ -22,11 +18,7 @@ function Home() {
         <div className='center'>
           <p>Hello!</p>
             <h1>I'm Lea Gront</h1>
-            <div className="social-icons">
-              <a href="https://www.facebook.com/profile.php?id=100003286624486" target="_blank" rel="noopener noreferrer"><img src={facebookIcon} alt='facebook icon' /></a>
-              <a href="https://www.linkedin.com/in/lea-gront/" target="_blank" rel="noopener noreferrer"><img src={linkedInIcon} alt='linkedin icon'/></a>
-              <a href="https://github.com/Lealea8455" target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt='github icon' /></a>
-            </div>
+            <SocialIcons />
             <div className='personal-image'>
               <img src={myImage} alt='me' />
             </div>
@@ -74,18 +66,18 @@ function Home() {
         </div>
         <hr />
         <div className='menu-circles'>
-          <div className='skills-circle'>
-            <img src={tags}></img>
-            <Link to='/skills'>My Skills</Link>
-          </div>
-          <div className='know-me-circle'>
-            <img src={fingerprint}></img>
-            <Link to='/about'>Get To Know Me</Link>
-            </div>
-          <div className='contact-circle'>
+            <Link to='/skills'>
+              <img src={tags}></img>
+              <p>My Skills </p>
+            </Link>
+            <Link to='/about'>
+              <img src={fingerprint}></img>
+              <p>Get To Know Me </p>
+            </Link>
+            <Link to='/contact'>
             <img src={mail}></img>
-            <Link to='/contact'>Contact Me</Link>
-          </div>
+              <p>Contact Me </p>
+            </Link>
         </div>
       </div>
     </Fragment>
