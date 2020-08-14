@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import {Link} from 'react-router-dom';
 import myImage from '../../images/me.png';
 import facebookIcon from '../../images/facebook-icon.svg';
 import githubIcon from '../../images/github-icon.svg';
@@ -8,6 +9,11 @@ import calendarIcon from '../../images/calendar.svg';
 import coffeeIcon from '../../images/coffee.svg';
 import movieIcon from '../../images/movie.svg';
 import desktop from '../../images/desktop.png';
+import tags from '../../images/tags.svg';
+import mail from '../../images/mail.svg';
+import fingerprint from '../../images/fingerprint.svg';
+
+
 
 function Home() {
   return (
@@ -67,19 +73,23 @@ function Home() {
           </div>
         </div>
         <hr />
+        <div className='menu-circles'>
+          <div className='skills-circle'>
+            <img src={tags}></img>
+            <Link to='/skills'>My Skills</Link>
+          </div>
+          <div className='know-me-circle'>
+            <img src={fingerprint}></img>
+            <Link to='/about'>Get To Know Me</Link>
+            </div>
+          <div className='contact-circle'>
+            <img src={mail}></img>
+            <Link to='/contact'>Contact Me</Link>
+          </div>
+        </div>
       </div>
     </Fragment>
   )
 }
 
 export default Home;
-
-// <a href="https://www.facebook.com/profile.php?id=100003286624486" target="_blank" rel="noopener noreferrer">
-// <span><FontAwesomeIcon icon={['fab', 'facebook-f']} /></span>
-// </a>
-// <a href="https://www.linkedin.com/in/lea-gront/" target="_blank" rel="noopener noreferrer">
-// <span><FontAwesomeIcon icon={['fab', 'linkedin-in']} /></span>
-// </a>
-// <a href="https://github.com/Lealea8455" target="_blank" rel="noopener noreferrer">
-// <span><FontAwesomeIcon icon={['fab', 'github']} /></span>
-// </a>

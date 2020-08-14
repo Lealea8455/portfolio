@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <header>
       <ul>
-        <li> <Link to='/'>Home</Link></li>
+        <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About Me</Link></li>
         <li><Link to='/skills'>My Skills</Link></li>
         <li><Link to='/contact'>Contact</Link></li>

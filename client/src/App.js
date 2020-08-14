@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
 import Routes from './components/routing/Routes';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -18,14 +19,12 @@ function App() {
     <Router>
       <div  id='wrapper'>
         <div className='inner'>
-        {/* <div className='background'> */}
           <Navbar />
             <Switch>
                 <Route component={Routes} />
             </Switch>
-        {/* </div> */}
         </div>
-        {/* <Footer /> */} <div className='footer'>Footer</div>
+        <Footer /> 
       </div>
     </Router>
   );
