@@ -12,11 +12,13 @@ import Routes from './components/routing/Routes';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import ScrollToTop from './components/layout/ScrollTop';
 library.add(fab)
 
 function App() {
   return (
     <Router>
+     <ScrollToTop/>
       <div  id='wrapper'>
         <div className='inner'>
           <Navbar />
