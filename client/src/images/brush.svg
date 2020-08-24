@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70.591" height="54.837" viewBox="0 0 70.591 54.837">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:none;stroke-miterlimit:10;stroke-width:2px}.cls-1{stroke:#000}.cls-2{stroke:#2fd0d8}
+        </style>
+    </defs>
+    <g id="Group_124" data-name="Group 124" transform="translate(-288 -295.412)">
+        <path id="Path_81" d="M330.592 322.8l20.657-19.537a4.028 4.028 0 0 0-5.7-5.7L324.9 317.107l-26.258 6.856c-.827 4.753 2.072 11.607 7.781 17.316s12.563 8.609 17.316 7.781z" class="cls-1" data-name="Path 81" transform="translate(5.185)"/>
+        <path id="Path_82" d="M322.157 315.738c-.609.611-2.378-.17-3.951-1.743s-2.354-3.342-1.745-3.951" class="cls-1" data-name="Path 82" transform="translate(13.951 6.731)"/>
+        <path id="Path_83" d="M324.769 313.128c-.609.609-2.38-.17-3.953-1.743s-2.353-3.342-1.743-3.953" class="cls-1" data-name="Path 83" transform="translate(15.241 5.441)"/>
+        <path id="Line_3" d="M8.01 0L0 4.761" class="cls-1" data-name="Line 3" transform="translate(306.036 329.093)"/>
+        <path id="Line_4" d="M4.382 0L0 4.571" class="cls-1" data-name="Line 4" transform="translate(312.017 337.115)"/>
+        <path id="Line_5" d="M4.092 0L0 8.038" class="cls-1" data-name="Line 5" transform="translate(320.849 339.683)"/>
+        <path id="Path_84" d="M300.886 326.963a5.228 5.228 0 1 1-3.658-8.963" class="cls-2" data-name="Path 84" transform="translate(1.975 10.66)"/>
+        <path id="Path_85" d="M295.985 319.149a5.98 5.98 0 1 1 8.966-5.174" class="cls-2" data-name="Path 85" transform="translate(2.469 5.722)"/>
+        <circle id="Ellipse_28" cx="4.481" cy="4.481" r="4.481" class="cls-2" data-name="Ellipse 28" transform="translate(289.494 298.784)"/>
+        <path id="Line_6" d="M2.988 0L0 0" class="cls-1" data-name="Line 6" transform="translate(288 327.166)"/>
+        <path id="Line_7" d="M2.988 0L0 0" class="cls-1" data-name="Line 7" transform="translate(304.431 346.585)"/>
+        <path id="Path_86" d="M299.416 306.481a7.471 7.471 0 0 1 13.695 5.975" class="cls-2" data-name="Path 86" transform="translate(5.637 2.759)"/>
+        <path id="Line_8" d="M2.988 0L0 0" class="cls-1" data-name="Line 8" transform="translate(302.938 300.278)"/>
+    </g>
+</svg>

@@ -67,15 +67,15 @@ function Home() {
         <hr />
         <div className='menu-circles'>
             <Link to='/skills'>
-              <img src={tags}></img>
+              <img src={tags} alt='tags'></img>
               <p>My Skills </p>
             </Link>
             <Link to='/about'>
-              <img src={fingerprint}></img>
+              <img src={fingerprint} alt='fingerprint'></img>
               <p>Get To Know Me </p>
             </Link>
             <Link to='/contact'>
-            <img src={mail}></img>
+            <img src={mail} alt='mail'></img>
               <p>Contact Me </p>
             </Link>
         </div>

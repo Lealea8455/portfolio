@@ -19,7 +19,7 @@ body {
 #wrapper {
     display: flex;
     flex-direction: column;  
-
+   
     .inner {
          height: 100%;
          max-width: 1300px;
@@ -238,8 +238,11 @@ body {
     max-width: 1300px;
     text-align:left;   
     justify-content: space-between;
-    margin-bottom: 50px;
     margin-top: 180px;
+    width: 100%;
+    margin: auto;
+    height: 120px;
+    align-items: center;
 
     .footer-data {
         display: flex;
@@ -264,7 +267,5 @@ body {
             text-decoration: none;
             margin: auto 12.5px;
         }
-            
-
     }
 }

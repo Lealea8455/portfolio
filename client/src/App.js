@@ -23,8 +23,8 @@ function App() {
           <Switch>
               <Route component={Routes} />
           </Switch>
-          <Footer /> 
         </div>
+          <Footer /> 
       </div>
     </Router>
   );
