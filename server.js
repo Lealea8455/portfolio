@@ -10,8 +10,6 @@ const PORT = process.env.PORT || 5001;
 app.use(express.json({ extended: false }));
 app.use(express.urlencoded({ extended: false }));
 
-app.get('/', (req, res) => res.send('Hello App!'));
-
 app.post('/send', async (req, res) => {
 
   const output = `
