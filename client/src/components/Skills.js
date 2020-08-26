@@ -8,7 +8,7 @@ function Skills() {
   const title = 'Skills & Experience';
 
   return (
-    <div>
+    <div className='skills'>
       <Top title={title}/>
       <div className='main-skills'>
         <img src={skillsImg} alt='skills' />

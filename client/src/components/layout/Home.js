@@ -10,6 +10,7 @@ import tags from '../../images/tags.svg';
 import mail from '../../images/mail.svg';
 import fingerprint from '../../images/fingerprint.svg';
 import SocialIcons from '../SocialIcons';
+import plantIcon from '../../images/plant.png';
 
 function Home() {
   return (
@@ -32,12 +33,6 @@ function Home() {
             </div>
             <p>27 Years Old</p>
           </div>
-          <div className='movie-icon'>
-            <div className='icon-wrapper'>
-              <img src={movieIcon} alt='movie icon'/>
-            </div>
-            <p>Love Movies</p>
-          </div>
           <div className='coffee-icon'>
             <div className='icon-wrapper'>
               <img src={coffeeIcon} alt='coffee icon'/>
@@ -50,6 +45,14 @@ function Home() {
             </div>
             <p>Crazy About Dogs</p>
           </div>
+          <div className='plant-icon'>
+            <div className='icon-wrapper'>
+              <img src={plantIcon} alt='plant icon'/>
+            </div>
+            <p>Love Plants</p>
+          </div>
+     
+ 
         </div>
         <hr />
         <div className='junior-developer'>
