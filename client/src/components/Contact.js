@@ -46,7 +46,7 @@ function Contact() {
       <div className='top-contact'>
       <div className='right'>
         <div className="phone-details">
-          <h2>Call me: <span><strong>050 - 430 - 7456</strong></span>,</h2>
+          <h2>Call me: <span><strong>050 - 430 - 7456</strong></span></h2>
         </div>
         <h2>Or contact me via email</h2>
         <form onSubmit={e => onSubmit(e)} > 
