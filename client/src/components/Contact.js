@@ -1,6 +1,6 @@
 import React, {useState, Fragment} from 'react'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
+import '../styles/Contact.scss';
 
 function Contact() {
 
@@ -33,21 +33,33 @@ function Contact() {
     }
   }
 
+  const title = "I Would Love To Hear From You!";
   return (
-    <Fragment>
-      <h1>Contact me</h1>
-      <p>I am currently looking for a position as a full stack developer.<br/>
-         Would be happy to get to know you, and share my knowledge and experience with you.  </p>
-      <form onSubmit={e => onSubmit(e)} > 
-          <input type="text" name="name" placeholder="name" onChange={e => onChange(e)} />
-          <input type="text" name="company" placeholder="company" onChange={e => onChange(e)} />
-          <input type="email" name="email" placeholder="email" onChange={e => onChange(e)} />
-          <input type="text" name="phone" placeholder="phone" onChange={e => onChange(e)} />
-          <input type="text" name="message" placeholder="message" onChange={e => onChange(e)} />
-          <button type="submit">Submit</button>
-      </form>
-      {/* <Map /> */}
-    </Fragment>
+    <div className='contact'>
+      <div className='left'>
+      <div className='inner-left'>
+        <h1>I Would Love to <br /> Hear From You.</h1>
+        <p>I am currently looking for a position as a full stack developer.<br/>
+          Would be happy to get to know you, and share my knowledge and experience with you.  </p>   
+      </div>
+      </div>
+      <div className='top-contact'>
+      <div className='right'>
+        <div className="phone-details">
+          <h2>Call me: <span><strong>050 - 430 - 7456</strong></span></h2>
+        </div>
+        <h2>Or contact me via email</h2>
+        <form onSubmit={e => onSubmit(e)} > 
+            <input type="text" name="name" placeholder="name" onChange={e => onChange(e)} />
+            <input type="text" name="company" placeholder="company" onChange={e => onChange(e)} />
+            <input type="email" name="email" placeholder="email" onChange={e => onChange(e)} />
+            <input type="text" name="phone" placeholder="phone" onChange={e => onChange(e)} />
+            <textarea type="text" name="message" placeholder="message" onChange={e => onChange(e)} />
+            <button type="submit">Send</button>
+        </form>
+      </div>
+      </div>
+    </div>
   )
 }
 

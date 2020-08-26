@@ -1,0 +1,102 @@
+.contact {
+  height: 88vh;
+  background-image: url('../images/contact-bkg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  padding: 0 40px;
+
+  .left {
+    height: 100%;
+    width: 100%;
+    flex: 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .inner-left {
+      max-width: 450px;
+      
+      h1 {
+        font-size: 50px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.7;
+        text-shadow: 3px 2px 2px #0f4346;
+      }
+    }
+  }
+
+  .right {
+    max-width: 380px;
+  }
+
+  .top-contact {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.55;
+      
+    form {
+      margin-top: 30px;
+    }
+
+    input {
+      width: 46%;
+      height: 40px;
+      margin-bottom: 30px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    button {
+      height: 40px;
+      text-align: center;
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #0f4346;
+      color: white;
+      box-shadow: 0 0 22px 5px #7aa7a7;
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
+
+    input:nth-child(3n), input:first-child {
+      margin-right: 8%;
+    }
+
+    textarea { 
+      width: 100%;
+      margin-bottom: 27px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #0f4346;
+      opacity: 1; /* Firefox */
+    }
+    
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #0f4346;
+    }
+    
+    ::-ms-input-placeholder { /* Microsoft Edge */
+      color: #0f4346;
+    }
+    
+  }
+}
