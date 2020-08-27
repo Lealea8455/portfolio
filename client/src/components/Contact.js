@@ -66,10 +66,10 @@ function Contact() {
                 </div>
           }
           <form onSubmit={e => onSubmit(e)} > 
-              <input required value={name} type="text" name="name" placeholder="name" onChange={e => onChange(e)} />
-              <input required value={company} type="text" name="company" placeholder="company" onChange={e => onChange(e)} />
+              <input minlength={2} required value={name} type="text" name="name" placeholder="name" onChange={e => onChange(e)} />
+              <input minlength={2} required value={company} type="text" name="company" placeholder="company" onChange={e => onChange(e)} />
               <input required value={email} type="email" name="email" placeholder="email" onChange={e => onChange(e)} />
-              <input required value={phone} type="text" name="phone" placeholder="phone" onChange={e => onChange(e)} />
+              <input required value={phone} type="tel" pattern="^[0-9]{3}[-]{0,1}[0-9]{7}$" name="phone" placeholder="phone" onChange={e => onChange(e)} />
               <textarea type="text" name="message" placeholder="message" onChange={e => onChange(e)} />
               <button type="submit">SEND</button>
           </form>
