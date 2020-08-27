@@ -9,10 +9,12 @@ function Contact() {
     company: '',
     email: '',
     phone: '',
-    message: ''
-  })
+    message: '', 
+    formSubmitted: false
+  }
+  )
 
-  const {name, company, email, phone, message} = formData;
+  const {name, company, email, phone, message, formSubmitted} = formData;
 
   const onChange = e => setFormData({...formData, [e.target.name]: e.target.value});
   
@@ -27,13 +29,24 @@ function Contact() {
       }
 
       const res = await axios.post('/send', formData, config);
-      if(res) console.log(res);
+      if(res) {
+       
+        setFormData({...formData, 
+          name: '',
+          company: '',
+          email: '',
+          phone: '',
+          message: '', 
+          formSubmitted: true
+        }       
+        );
+
+      }
     } catch (err) {
       console.error(err);
     }
   }
 
-  const title = "I Would Love To Hear From You!";
   return (
     <div className='contact'>
     <div className='top-contact'>
@@ -45,15 +58,18 @@ function Contact() {
         </div>
       </div>
       <div className='right'>
-        <div className="phone-details">
-          <p>Call me: <span>050 - 430 - 7456</span></p>
-        </div>
-        <p>Or contact me via email</p>
+        { formSubmitted 
+            ? <h1>Thank you :) !!</h1>
+            : <div className="phone-details">
+                <p>Call me: <span>050 - 430 - 7456</span></p>
+                <p>Or contact me via email</p>
+              </div>
+        }
         <form onSubmit={e => onSubmit(e)} > 
-            <input type="text" name="name" placeholder="name" onChange={e => onChange(e)} />
-            <input type="text" name="company" placeholder="company" onChange={e => onChange(e)} />
-            <input type="email" name="email" placeholder="email" onChange={e => onChange(e)} />
-            <input type="text" name="phone" placeholder="phone" onChange={e => onChange(e)} />
+            <input value={name} type="text" name="name" placeholder="name" onChange={e => onChange(e)} />
+            <input value={company} type="text" name="company" placeholder="company" onChange={e => onChange(e)} />
+            <input value={email} type="email" name="email" placeholder="email" onChange={e => onChange(e)} />
+            <input value={phone} type="text" name="phone" placeholder="phone" onChange={e => onChange(e)} />
             <textarea type="text" name="message" placeholder="message" onChange={e => onChange(e)} />
             <button type="submit">SEND</button>
         </form>

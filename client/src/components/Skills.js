@@ -14,7 +14,7 @@ function Skills() {
         <img src={skillsImg} alt='skills' />
         <div className='text'>
           <p>The main area of my experience is front end development (client side of the web).</p>
-          <p>I have also backend experience with C# .NET,  And Node.js mongoDB from side projects and open source contribution.</p>
+          <p>I have also backend experience with C# .NET,  And Node.js mongoDB (this site for example) from side projects and open source contribution.</p>
         </div>
       </div>
       <hr />
