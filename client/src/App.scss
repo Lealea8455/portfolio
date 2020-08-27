@@ -91,7 +91,7 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
-    height: 725px;
+    height: 650px;
     width: 100vw;
     position: relative;
     left: 50%;
@@ -309,3 +309,68 @@ hr {
     width: 200px;
     margin: 70px auto;
   } 
+
+  // Ipad 
+  @media screen and (min-width: 768px) and (max-width: 1091px) {
+    .main-section-wrapper {
+
+        hr {
+            margin: 70px auto;
+        }
+
+        .top-icons  {
+            margin: auto;
+            margin-top: 70px;
+            > div {
+                padding: 0 40px;
+            }
+            
+            p {
+                font-size: 12px;
+            }  
+        }
+
+        .junior-developer {
+            display: inline-block;
+
+            .desktop  {
+                display: block;
+                img {
+                    height: 310px;
+                    width: 410px;    
+                }
+            }
+
+            .context {
+                margin: auto;
+                max-width: 560px;
+                text-align: center;
+                margin-top: 70px;
+            }
+        }
+
+        .menu-circles {
+            > a {
+                height: 150px;
+                width: 150px;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 55px;
+                }
+
+                p {
+                    margin-top: 5px;
+                }
+            }
+
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+  }
+  
+
+  // Mobile
