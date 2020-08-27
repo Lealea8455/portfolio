@@ -57,3 +57,25 @@
     margin-bottom: 60px;
   }
 }
+
+
+  @media screen and (min-width: 768px) and (max-width: 1091px)  {
+    .skills {
+
+      .main-skills {
+        display: block;
+        text-align: center;
+      }
+      
+      .item-wrap {
+        > div {
+          width: 120px;
+          height: 120px;
+        }
+
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
