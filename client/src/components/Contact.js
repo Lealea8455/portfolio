@@ -49,36 +49,32 @@ function Contact() {
 
   return (
     <div className='contact'>
-    <div className='top-contact'>
-      <div className='left'>
-        <div className='inner-left'>
-          <h1>I Would Love to <br /> Hear From You.</h1>
-          <p>I am currently looking for a position as a full stack developer.<br/>
-            Would be happy to get to know you, and share my knowledge and experience with you.  </p>   
+      <div className='top-contact'>
+        <div className='left'>
+          <div className='inner-left'>
+            <h1>I Would Love to <br /> Hear From You.</h1>
+            <p>I am currently looking for a position as a full stack developer.<br/>
+              Would be happy to get to know you, and share my knowledge and experience with you.  </p>   
+          </div>
+        </div>
+        <div className='right'>
+          { formSubmitted 
+              ? <h1>Thank you :) !!</h1>
+              : <div className="phone-details">
+                  <p>Call me: <span>050 - 430 - 7456</span></p>
+                  <p>Or contact me via email</p>
+                </div>
+          }
+          <form onSubmit={e => onSubmit(e)} > 
+              <input required value={name} type="text" name="name" placeholder="name" onChange={e => onChange(e)} />
+              <input required value={company} type="text" name="company" placeholder="company" onChange={e => onChange(e)} />
+              <input required value={email} type="email" name="email" placeholder="email" onChange={e => onChange(e)} />
+              <input required value={phone} type="text" name="phone" placeholder="phone" onChange={e => onChange(e)} />
+              <textarea type="text" name="message" placeholder="message" onChange={e => onChange(e)} />
+              <button type="submit">SEND</button>
+          </form>
         </div>
       </div>
-      <div className='right'>
-        { formSubmitted 
-            ? <h1>Thank you :) !!</h1>
-            : <div className="phone-details">
-                <p>Call me: <span>050 - 430 - 7456</span></p>
-                <p>Or contact me via email</p>
-              </div>
-        }
-        <form onSubmit={e => onSubmit(e)} > 
-            <input value={name} type="text" name="name" placeholder="name" onChange={e => onChange(e)} />
-            <input value={company} type="text" name="company" placeholder="company" onChange={e => onChange(e)} />
-            <input value={email} type="email" name="email" placeholder="email" onChange={e => onChange(e)} />
-            <input value={phone} type="text" name="phone" placeholder="phone" onChange={e => onChange(e)} />
-            <textarea type="text" name="message" placeholder="message" onChange={e => onChange(e)} />
-            <button type="submit">SEND</button>
-        </form>
-      </div>
-    </div>
- 
-      {/* <div className='top-contact'>
- 
-      </div> */}
     </div>
   )
 }
