@@ -73,5 +73,32 @@
       }
     }
   }
-
 }
+
+  // Ipad 
+  @media screen and (min-width: 768px) and (max-width: 1091px) {
+    .about {
+      .main-about {
+        .circle-about-images {
+          img {
+            height: 185px;
+            width: 185px;
+          }
+        }
+      }
+        .bottom-about {
+          .more-about {
+            > div {
+              > div {
+                img {
+                  height: 55px;
+                  width: 55px;            
+                }
+              }
+            } 
+          }
+        } 
+      
+    }
+  }
+

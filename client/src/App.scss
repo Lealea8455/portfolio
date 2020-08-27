@@ -314,10 +314,6 @@ hr {
   @media screen and (min-width: 768px) and (max-width: 1091px) {
     .main-section-wrapper {
 
-        hr {
-            margin: 70px auto;
-        }
-
         .top-icons  {
             margin: auto;
             margin-top: 70px;
@@ -368,6 +364,10 @@ hr {
             a {
                 font-size: 16px;
             }
+        }
+        
+        hr {
+            margin: 70px auto;
         }
     }
   }
