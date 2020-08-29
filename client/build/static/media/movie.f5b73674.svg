@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68.882" height="51.003" viewBox="0 0 68.882 51.003">
+    <g id="Group_59" data-name="Group 59" transform="translate(-822 -1009.869)">
+        <g id="Group_41" data-name="Group 41" transform="translate(-1346.223 -848.921)">
+            <g id="Group_37" data-name="Group 37" transform="translate(2168.223 1858.79)">
+                <path id="Path_17" d="M2233.534 1902.531h-61.741a3.574 3.574 0 0 1-3.57-3.57v-36.6a3.574 3.574 0 0 1 3.57-3.57h61.741a3.574 3.574 0 0 1 3.571 3.57v36.6a3.574 3.574 0 0 1-3.571 3.57zm-61.741-40.88a.71.71 0 0 0-.709.709v36.6a.71.71 0 0 0 .709.709h61.741a.71.71 0 0 0 .71-.709v-36.6a.71.71 0 0 0-.71-.709z" data-name="Path 17" transform="translate(-2168.223 -1858.79)"/>
+            </g>
+            <g id="Group_38" data-name="Group 38" transform="translate(2197.603 1899.67)">
+                <path id="Path_18" d="M2485 2297.583h-7.262a1.431 1.431 0 0 1-1.43-1.431v-7.262a1.43 1.43 0 0 1 1.43-1.43H2485a1.43 1.43 0 0 1 1.43 1.43v7.262a1.431 1.431 0 0 1-1.43 1.431zm-5.831-2.861h4.4v-4.4h-4.4z" data-name="Path 18" transform="translate(-2476.303 -2287.46)"/>
+            </g>
+            <g id="Group_39" data-name="Group 39" transform="translate(2185.381 1906.931)">
+                <path id="Path_19" d="M2381.28 2366.467h-31.7a1.43 1.43 0 0 1 0-2.861h31.7a1.43 1.43 0 0 1 0 2.861z" data-name="Path 19" transform="translate(-2348.145 -2363.606)"/>
+            </g>
+            <g id="Group_40" data-name="Group 40" transform="translate(2168.223 1894.468)">
+                <path id="Path_20" d="M2235.675 2235.778h-66.021a1.431 1.431 0 0 1 0-2.861h66.021a1.431 1.431 0 0 1 0 2.861z" data-name="Path 20" transform="translate(-2168.223 -2232.917)"/>
+            </g>
+        </g>
+        <g id="Polygon_1" fill="#fff" stroke="none" data-name="Polygon 1">
+            <path d="M15.487 15H3.513c-.524 0-.782-.353-.869-.505-.086-.152-.258-.554.01-1.006L8.64 3.407c.262-.442.689-.49.86-.49.171 0 .598.048.86.49l5.986 10.082c.268.452.096.854.01 1.006-.087.152-.345.505-.87.505z" transform="rotate(90 -77 943.5)"/>
+            <path fill="#2fd0d8" d="M9.5 3.917L3.513 14h11.974L9.5 3.917m0-2c.666 0 1.332.327 1.72.98l5.986 10.082c.792 1.333-.169 3.021-1.72 3.021H3.514c-1.55 0-2.51-1.688-1.72-3.021L7.78 2.896c.388-.652 1.054-.979 1.72-.979z" transform="rotate(90 -77 943.5)"/>
+        </g>
+    </g>
+</svg>
