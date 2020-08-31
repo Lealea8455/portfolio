@@ -58,6 +58,7 @@ function Contact() {
           </div>
         </div>
         <div className='right'>
+          { formSubmitted 
               ? <h1>Thank you :) !!</h1>
               : <div className="phone-details">
                   <p>Call me: <span>050 - 430 - 7456</span></p>
