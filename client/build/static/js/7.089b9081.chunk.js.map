@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/Projects.js"],"names":["Projects"],"mappings":"iGAAA,2BAUeA,UARf,WACE,OACE","file":"static/js/7.089b9081.chunk.js","sourcesContent":["import React from 'react'\r\n\r\nfunction Projects() {\r\n  return (\r\n    <div>\r\n      projects\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default Projects;\r\n"],"sourceRoot":""}

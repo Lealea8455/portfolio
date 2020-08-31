@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import Top from './layout/Top';
 import skillsImg from '../images/skills.svg';
 import '../styles/Skills.scss';

@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import '../styles/About.scss';
 
 import dambo1 from '../images/dambo1.png';

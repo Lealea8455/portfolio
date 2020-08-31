@@ -1,4 +1,4 @@
-import React, {useState, Fragment} from 'react'
+import React, {useState} from 'react'
 import axios from 'axios';
 import '../styles/Contact.scss';
 
@@ -58,7 +58,6 @@ function Contact() {
           </div>
         </div>
         <div className='right'>
-          { formSubmitted 
               ? <h1>Thank you :) !!</h1>
               : <div className="phone-details">
                   <p>Call me: <span>050 - 430 - 7456</span></p>
@@ -66,8 +65,8 @@ function Contact() {
                 </div>
           }
           <form onSubmit={e => onSubmit(e)} > 
-              <input minlength={2} required value={name} type="text" name="name" placeholder="name" onChange={e => onChange(e)} />
-              <input minlength={2} required value={company} type="text" name="company" placeholder="company" onChange={e => onChange(e)} />
+              <input minLength={2} required value={name} type="text" name="name" placeholder="name" onChange={e => onChange(e)} />
+              <input minLength={2} required value={company} type="text" name="company" placeholder="company" onChange={e => onChange(e)} />
               <input required value={email} type="email" name="email" placeholder="email" onChange={e => onChange(e)} />
               <input required value={phone} type="tel" pattern="^[0-9]{3}[-]{0,1}[0-9]{7}$" name="phone" placeholder="phone" onChange={e => onChange(e)} />
               <textarea type="text" name="message" placeholder="message" onChange={e => onChange(e)} />

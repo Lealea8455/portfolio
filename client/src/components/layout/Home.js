@@ -4,7 +4,6 @@ import myImage from '../../images/me.png';
 import boneIcon from '../../images/bone.svg';
 import calendarIcon from '../../images/calendar.svg';
 import coffeeIcon from '../../images/coffee.svg';
-import movieIcon from '../../images/movie.svg';
 import desktop from '../../images/desktop.png';
 import tags from '../../images/tags.svg';
 import mail from '../../images/mail.svg';
@@ -56,7 +55,7 @@ function Home() {
         </div>
         <hr />
         <div className='junior-developer'>
-          <div className='desktop'><img src={desktop} /></div>
+          <div className='desktop'><img src={desktop} alt='desktop'/></div>
           <div className='context'>
             <h1>I am a junior Full-stack developer</h1>
             <p>Graduated with a bachelor degree in computer science. <br/>
