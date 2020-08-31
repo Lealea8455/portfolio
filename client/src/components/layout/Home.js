@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import {Link} from 'react-router-dom';
-import myImage from '../../images/me.png';
+import myImage from '../../images/me.jpg';
 import boneIcon from '../../images/bone.svg';
 import calendarIcon from '../../images/calendar.svg';
 import coffeeIcon from '../../images/coffee.svg';
