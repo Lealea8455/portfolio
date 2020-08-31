@@ -1,14 +1,17 @@
 const express = require('express');
 const path = require('path');
 const nodemailer = require('nodemailer');
+const compression = require('compression');
 
 const app = express();
 
 const PORT = process.env.PORT || 5001;
 
 // Init Middleware
+app.use(compression());
 app.use(express.json({ extended: false }));
 app.use(express.urlencoded({ extended: false }));
+
 
 app.post('/send', async (req, res) => {
 
