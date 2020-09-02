@@ -39,7 +39,7 @@ function Skills() {
           <div><p>Git</p></div>
         </div>
         <div className='item-wrap'>
-          <div><p>C#, .NET / .NET Core</p></div>
+          <div><p>C#, .NET</p></div>
           <div><p>TDD - NUnit, jest</p></div>
         </div>
       </div>
