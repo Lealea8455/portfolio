@@ -519,6 +519,11 @@ hr {
     margin: 70px auto;
   } 
 
+.nav__toggle.mobile {   
+    display: none;
+} 
+    
+
   // Ipad 
   @media screen and (min-width: 768px) and (max-width: 1091px) {
     .main-section-wrapper {
@@ -587,6 +592,13 @@ hr {
         .inner {
             max-width: 768px;
             padding: 0;
+        }
+
+        .common-top {
+            text-align: center;
+            h1 {
+                font-size: 50px;
+            }
         }
 
         .top-icons {

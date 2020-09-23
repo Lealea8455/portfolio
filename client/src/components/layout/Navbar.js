@@ -12,8 +12,8 @@ const Navbar = () => {
       </ul>
 
       {/* <!-- MENU TOGGLE BUTTON --> */}
-      <a href="#nav" className="nav__toggle" role="button" aria-                    expanded="false" aria-controls="menu">
-         <svg className="menuicon" xmlns="http://www.w3.org/2000/svg"               width="50" height="50" viewBox="0 0 50 50">
+      <a href="#nav" className="nav__toggle mobile" role="button" aria-expanded="false" aria-controls="menu">
+         <svg className="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
           <title>Toggle Menu</title>
           <g>
             <line className="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
