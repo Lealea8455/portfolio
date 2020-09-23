@@ -28,6 +28,9 @@
     flex-direction: column;
   }
   
+  .language-mobile {
+    display: none;
+  }
   
   .item-wrap {
     display: flex;
@@ -58,7 +61,6 @@
   }
 }
 
-
   @media screen and (min-width: 768px) and (max-width: 1091px)  {
     .skills {
 
@@ -75,6 +77,54 @@
 
         p {
           font-size: 15px;
+        }
+      }
+    }
+  }
+
+  // Mobile
+  @media screen and (max-width: 768px) {
+    .skills {
+      margin-bottom: 20px;
+      
+      .main-skills {
+        flex-direction: column;
+        padding: 0 20px;
+
+        img {
+          height: 250px;
+        }
+
+        .text {
+          margin: 0;
+          text-align: center;
+        }
+      }
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      .languages {
+        display: none;
+      }
+
+      .language-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        div {
+          height: 50px;
+          width: 200px;
+          margin: 20px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          background-color: #e2f0ff;
+          border-radius: 4px;
         }
       }
     }

@@ -11,8 +11,8 @@ const Navbar = () => {
         <li><Link to='/contact'>Contact</Link></li>
       </ul>
 
-      {/* <!-- MENU TOGGLE BUTTON --> */}
-      <a href="#nav" className="nav__toggle mobile" role="button" aria-expanded="false" aria-controls="menu">
+      {/* <!-- MENU TOGGLE BUTTON -->
+      <a href="#nav" className=" " role="button" aria-expanded="false" aria-controls="menu">
          <svg className="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
           <title>Toggle Menu</title>
           <g>
@@ -23,7 +23,7 @@ const Navbar = () => {
             <circle className="menuicon__circle" r="23" cx="25" cy="25" />
           </g>
         </svg>
-      </a>
+      </a> */}
     </header>
   )
 }
