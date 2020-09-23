@@ -24,7 +24,7 @@ function About() {
         <p>I’m Lea Gront, 27 years old from Petach - Tiqwa, Israel. I live with 
             my fiancé Dani and our perfect dog, Dambo.</p>
           <p>I graduated with a bachelor degree in computer science at HIT and 
-              I have 1 year of hands-on experience as a front-end 
+              I have 1 year of hands-on experience as a Full-Stack 
               developer from Kissterra.</p>
           <hr />
       </div>

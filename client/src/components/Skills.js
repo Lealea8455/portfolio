@@ -15,6 +15,7 @@ function Skills() {
         <div className='text'>
           <p>The main area of my experience is front end development (client side of the web).</p>
           <p>I have also backend experience with C# .NET,  And Node.js mongoDB (this site for example) from side projects and open source contribution.</p>
+          <p>  </p>
         </div>
       </div>
       <hr />

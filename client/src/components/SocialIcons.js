@@ -1,6 +1,6 @@
 import React from 'react'
 import facebookIcon from '../images/facebook-icon.svg';
-import githubIcon from '../images/github-icon.svg';
+import githubIcon from '../images/github.svg';
 import linkedInIcon from '../images/linkedIn-icon.svg';
 
 function SocialIcons() {

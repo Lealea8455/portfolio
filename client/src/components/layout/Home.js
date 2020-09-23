@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect }  from 'react';
 import {Link} from 'react-router-dom';
 import myImage from '../../images/me.jpg';
 import boneIcon from '../../images/bone.svg';
@@ -12,6 +12,26 @@ import SocialIcons from '../SocialIcons';
 import plantIcon from '../../images/plant.png';
 
 function Home() {
+
+  const [age, setAge] = useState(0);
+
+  useEffect(() => {
+    calculateAge("1992/11/15");
+  });
+
+  const calculateAge = (dateString) => {
+    let today = new Date();
+    let birthDate = new Date(dateString);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    let m = today.getMonth() - birthDate.getMonth();
+    
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    setAge(age);
+  }
+
   return (
     <Fragment>
       <div className='home-top'>
@@ -30,7 +50,7 @@ function Home() {
             <div className='icon-wrapper'>
               <img src={calendarIcon} alt='calendar icon'/>
             </div>
-            <p>27 Years Old</p>
+            <p>{age} Years Old</p>
           </div>
           <div className='coffee-icon'>
             <div className='icon-wrapper'>
@@ -51,7 +71,6 @@ function Home() {
             <p>Love Plants</p>
           </div>
      
- 
         </div>
         <hr />
         <div className='junior-developer'>
@@ -59,7 +78,7 @@ function Home() {
           <div className='context'>
             <h1>I am a junior Full-stack developer</h1>
             <p>Graduated with a bachelor degree in computer science. <br/>
-              Have 1 year of hands-on experience as a front-end developer, and now I'm looking for my next big challenge.</p> 
+              Have 1 year of hands-on experience as a Full-Stack developer, and now I'm looking for my next big challenge.</p> 
             <p>Well-organized person, problem solver with high attention to details. Friendly and have great social skills. <br/>
               I love web development. On my free time, I develope different web projects, take online courses and always looking for something interesting. 
             </p>
