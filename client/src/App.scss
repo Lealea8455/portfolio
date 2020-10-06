@@ -485,6 +485,12 @@ body {
             margin: auto 12.5px;
         }
     }
+
+    .copyrights {
+        font-size: 16px;
+        color: #afafaf;
+        text-decoration: none;
+    }
 }
 
 .common-top {
@@ -596,8 +602,10 @@ hr {
 
         .common-top {
             text-align: center;
+            margin-bottom: 45px;
             h1 {
                 font-size: 50px;
+                margin: 0 25px;
             }
         }
 
@@ -728,6 +736,11 @@ hr {
                 order: 1;
                 margin-bottom: 22px;
             }
+        }
+
+        .copyrights {
+            order: 3;
+            margin-top: 22px;
         }
     }
 

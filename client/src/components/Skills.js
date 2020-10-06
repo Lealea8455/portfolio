@@ -13,9 +13,8 @@ function Skills() {
       <div className='main-skills'>
         <img src={skillsImg} alt='skills' />
         <div className='text'>
-          <p>The main area of my experience is front end development (client side of the web).</p>
-          <p>I have also backend experience with C# .NET,  And Node.js mongoDB (this site for example) from side projects and open source contribution.</p>
-          <p>  </p>
+          <p>Have hands-on experience as a Full-Stack developer in C# .NET, MVC, SQL server, JS(ES6), HTML, CSS, SCSS, jQuery, Bootstrap.  </p>
+          <p>I develop many different side-projects that include C# .NET CORE, Node.js, Express, MongoDB, React, Redux, etc.</p>
         </div>
       </div>
       <hr />
@@ -40,7 +39,7 @@ function Skills() {
           <div><p>Git</p></div>
         </div>
         <div className='item-wrap'>
-          <div><p>C#, .NET</p></div>
+          <div><p>C#, .NET & .NET CORE</p></div>
           <div><p>TDD - NUnit, jest</p></div>
           <div><p>MVC</p></div>
           <div><p>SQL Server</p></div>

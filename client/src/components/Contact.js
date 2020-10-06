@@ -1,5 +1,6 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import axios from 'axios';
+import Top from './layout/Top';
 import '../styles/Contact.scss';
 
 function Contact() {
@@ -11,8 +12,16 @@ function Contact() {
     phone: '',
     message: '', 
     formSubmitted: false
-  }
-  )
+  })
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 780);
+
+  useEffect(() => {
+  window.addEventListener("resize", () => {
+      const ismobile = window.innerWidth < 780;
+      if (ismobile !== isMobile) setIsMobile(ismobile);
+    }, false);
+  }, [isMobile]);
 
   const {name, company, email, phone, message, formSubmitted} = formData;
 
@@ -47,12 +56,15 @@ function Contact() {
     }
   }
 
+  const title = `I Would Love to Hear From You!`;
+
   return (
-    <div className='contact'>
+    <div className={isMobile ? '' : 'contact'}>
+      {isMobile ? <Top title={title} /> : ''}
       <div className='top-contact'>
         <div className='left'>
           <div className='inner-left'>
-            <h1>I Would Love to <br /> Hear From You.</h1>
+            {isMobile? '' : <h1>I Would Love to <br /> Hear From You.</h1>}
             <p>I am currently looking for a position as a full stack developer.<br/>
               Would be happy to get to know you, and share my knowledge and experience with you.  </p>   
           </div>

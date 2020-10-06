@@ -76,11 +76,11 @@ function Home() {
         <div className='junior-developer'>
           <div className='desktop'><img src={desktop} alt='desktop'/></div>
           <div className='context'>
-            <h1>I am a junior Full-stack developer</h1>
-            <p>Graduated with a bachelor degree in computer science. <br/>
-              Have 1 year of hands-on experience as a Full-Stack developer, and now I'm looking for my next big challenge.</p> 
+            <h1>I am a Full-stack developer</h1>
+            <p>Graduated with a bachelor degree in computer science, <br/>
+               and I'm looking for my next big challenge as FS/FE/BE.</p> 
             <p>Well-organized person, problem solver with high attention to details. Friendly and have great social skills. <br/>
-              I love web development. On my free time, I develope different web projects, take online courses and always looking for something interesting. 
+              I <strong>love</strong> developing!! On my free time, I develop different web projects, take online courses and always looking for something interesting. 
             </p>
             <h4>Not afraid to explore and learn new technologies!</h4>
           </div>

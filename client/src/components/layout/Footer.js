@@ -9,6 +9,8 @@ function Footer() {
         <p>Lea Gront</p>
         <SocialIcons />
       </div>
+      <div className='copyrights'>Handcrafted by me ©</div>
+
       <div className='footer-menu'>
         <Link to='/about'>About Me</Link>
         <Link to='/skills'>My Skills</Link>
