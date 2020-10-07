@@ -6,7 +6,7 @@ import dambo2 from '../images/dambo2.png';
 import dambo3 from '../images/dambo3.png';
 import dambo4 from '../images/dambo4.png';
 import dambo5 from '../images/dambo5.png';
-import family from '../images/family.png';
+import dambo6 from '../images/dambo6.png';
 import drawer from '../images/drawer.svg';
 import brush from '../images/brush.svg';
 import lafa from '../images/lafa.svg';
@@ -33,7 +33,7 @@ function About() {
           <h1>Dambo</h1>
           <div>
             <img src={dambo1} alt='dambo1'/>
-            <img src={family} alt='family'/>
+            <img src={dambo6} alt='dambo6'/>
             <img src={dambo2} alt='dambo2'/>
           </div>
           <div>
